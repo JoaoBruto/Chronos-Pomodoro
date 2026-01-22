@@ -2,25 +2,33 @@
 // App
 // ExemploDeComponente
 
+type AppProps = {
+  logo: string;
+  menu: string;
+  history: string;
+}
 
-export function App () {
+export function App (props : AppProps) {
 
   return (
     <>
-      <div className="container-fluid">Menu</div>
-        <div className="container">
-          <div className="content">
-            <section>LOGO</section>
-          </div>
-
-      </div>
-
       <div className="container">
         <div className="content">
-          <section>Menu</section>
+          <section>{props.logo}</section>
         </div>
-
       </div>
+      <div className="container">
+        <div className="content">
+          <section>{props.menu}</section>
+        </div>
+      </div>
+      <div className="container">
+        <div className="content">
+          <section>{props.history}</section>
+        </div>
+      </div>
+
+      
     </>
   )
 }

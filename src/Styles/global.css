@@ -15,17 +15,3 @@ body {
   color: var(--text-default)
 }
 
-.container-fluid {
-  background-color: red;
-}
-
-.container {
-  max-width: 98rem;
-  background-color: yellow;
-  margin: 0 auto;
-}
-
-.content {
-  margin: 15px;
-  justify-items: center;
-}
