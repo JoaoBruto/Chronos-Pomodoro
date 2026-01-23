@@ -5,8 +5,8 @@ import './Styles/theme.css'
 // import { Heading } from './components/Heading.tsx'
 // import { TimerIcon } from 'lucide-react'
 // import { App } from './App.tsx'
-import { Container } from './components/Container.tsx'
-import { Heading } from './components/Heading.tsx'
+import { Container } from './components/Container/index.tsx'
+import { Heading } from './components/Heading/index.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
