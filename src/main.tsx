@@ -6,18 +6,15 @@ import './Styles/theme.css'
 // import { TimerIcon } from 'lucide-react'
 // import { App } from './App.tsx'
 import { Container } from './components/Container/index.tsx'
-import { Heading } from './components/Heading/index.tsx'
+import { Logo } from './components/LOGO/index.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <>
       <Container>
-        <Heading>LOGO</Heading>
+        <Logo></Logo>
       </Container>
 
-      <Container>
-        <Heading>MENU</Heading>
-      </Container>
     </>
   </StrictMode>,
 )
