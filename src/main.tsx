@@ -9,7 +9,8 @@ import { Logo } from './components/LOGO/index.tsx'
 
 import './Styles/global.css'
 import './Styles/theme.css'
-import { Menu } from './components/LOGO copy/index.tsx'
+import { Menu } from './components/MENU/index.tsx'
+import { CountDown } from './components/Count Down/index.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -21,6 +22,10 @@ createRoot(document.getElementById('root')!).render(
 
       <Container>
         <Menu></Menu>
+      </Container>
+
+      <Container>
+        <CountDown></CountDown>
       </Container>
 
     </>
