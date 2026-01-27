@@ -11,6 +11,7 @@ import './Styles/global.css'
 import './Styles/theme.css'
 import { Menu } from './components/MENU/index.tsx'
 import { CountDown } from './components/Count Down/index.tsx'
+import { DefaultInput } from './components/Input/index.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -31,8 +32,7 @@ createRoot(document.getElementById('root')!).render(
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='meuInput'>task</label>
-            <input type="text" id='MeuInput' />
+            <DefaultInput type='text' />
           </div>
 
           <div className='formRow'>
