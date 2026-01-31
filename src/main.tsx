@@ -12,6 +12,7 @@ import './Styles/theme.css'
 import { Menu } from './components/MENU/index.tsx'
 import { CountDown } from './components/Count Down/index.tsx'
 import { DefaultInput } from './components/Input/index.tsx'
+import { Cycles } from './components/Cycles/index.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -42,8 +43,7 @@ createRoot(document.getElementById('root')!).render(
           </div>
 
           <div className='formRow'>
-            <p>ciclos</p>
-            <p>0 0 0 0 0</p>
+            <Cycles></Cycles>
           </div>
 
           <div className='formRow'>

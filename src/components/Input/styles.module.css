@@ -22,6 +22,6 @@
 
 .Input:disabled {
   border-bottom: 0.2rem solid var(--disabled);
-  color: var(--text-muted);
+  color: var(--text-disabled);
 }
 
