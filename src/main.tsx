@@ -32,7 +32,7 @@ createRoot(document.getElementById('root')!).render(
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <DefaultInput labelText='task' id='meuInput' type='text' placeholder='Digite algo' />
+            <DefaultInput labelText='' id='meuInput' type='text' placeholder='Digite algo' />
 
 
           </div>
