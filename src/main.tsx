@@ -13,6 +13,8 @@ import { Menu } from './components/MENU/index.tsx'
 import { CountDown } from './components/Count Down/index.tsx'
 import { DefaultInput } from './components/Input/index.tsx'
 import { Cycles } from './components/Cycles/index.tsx'
+import { DefaultButton } from './components/DefaultButton/index.tsx'
+import { PlayCircleIcon } from 'lucide-react'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -33,9 +35,11 @@ createRoot(document.getElementById('root')!).render(
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <DefaultInput labelText='' id='meuInput' type='text' placeholder='Digite algo' />
-
-
+            <DefaultInput
+             labelText=''
+              id='meuInput'
+              type='text'
+              placeholder='Digite algo' />
           </div>
 
           <div className='formRow'>
@@ -47,7 +51,10 @@ createRoot(document.getElementById('root')!).render(
           </div>
 
           <div className='formRow'>
-            <button>Enviar</button>
+            <DefaultButton color='green'>
+              <PlayCircleIcon></PlayCircleIcon>
+
+            </DefaultButton>
           </div>
         </form>
       </Container>
