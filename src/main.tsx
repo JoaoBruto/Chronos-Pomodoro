@@ -15,6 +15,7 @@ import { DefaultInput } from './components/Input/index.tsx'
 import { Cycles } from './components/Cycles/index.tsx'
 import { DefaultButton } from './components/DefaultButton/index.tsx'
 import { PlayCircleIcon } from 'lucide-react'
+import { Footer } from './components/Footer/index.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -53,10 +54,13 @@ createRoot(document.getElementById('root')!).render(
           <div className='formRow'>
             <DefaultButton color='green'>
               <PlayCircleIcon></PlayCircleIcon>
-
             </DefaultButton>
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer></Footer>
       </Container>
 
     </>
