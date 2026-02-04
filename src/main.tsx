@@ -1,6 +1,6 @@
 // import { Heading } from './components/Heading.tsx'
 // import { TimerIcon } from 'lucide-react'
- import { App } from './App.tsx'
+// import { App } from './App.tsx'
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -68,9 +68,6 @@ createRoot(document.getElementById('root')!).render(
         <Footer></Footer>
       </Container>
 
-      <Container>
-        <App></App>
-      </Container>
 
     </>
   </StrictMode>,
