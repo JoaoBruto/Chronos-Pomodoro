@@ -18,9 +18,13 @@ import { PlayCircleIcon } from 'lucide-react'
 import { Footer } from './components/Footer/index.tsx'
 
 
+
 createRoot(document.getElementById('root')!).render(
+ 
   <StrictMode>
+    
     <>
+
       <Container>
         <Logo></Logo>
       </Container>
@@ -37,7 +41,7 @@ createRoot(document.getElementById('root')!).render(
         <form className='form' action=''>
           <div className='formRow'>
             <DefaultInput
-             labelText=''
+             labelText='1'
               id='meuInput'
               type='text'
               placeholder='Digite algo' />

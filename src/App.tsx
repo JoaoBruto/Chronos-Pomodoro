@@ -2,6 +2,8 @@
 // App
 // ExemploDeComponente
 
+
+
 type AppProps = {
   logo: string;
   menu: string;
@@ -12,6 +14,7 @@ export function App (props : AppProps) {
 
   return (
     <>
+
       <div className="container">
         <div className="content">
           <section>{props.logo}</section>
