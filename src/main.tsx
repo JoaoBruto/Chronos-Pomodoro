@@ -20,7 +20,8 @@ import { Footer } from './components/Footer/index.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
- 
+ // Sempre que eu usar useState, não vou usar atribuição direta
+ // Sempre que uma variável depender da variável anterior, deve-se colocar uma arrow function 'setFunção((prevState) => "o que ocorre")'
   <StrictMode>
     
     <>
