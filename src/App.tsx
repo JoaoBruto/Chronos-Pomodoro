@@ -2,6 +2,8 @@
 // App
 // ExemploDeComponente
 
+import { useState } from "react";
+
 
 
 type AppProps = {
@@ -11,10 +13,17 @@ type AppProps = {
 }
 
 export function App (props : AppProps) {
+  const [numero, setNumero] = useState(0)
+
+   function handleClick() {
+    setNumero(numero + 1);
+   }
+
 
   return (
     <>
-
+      <h1>Numero: {numero}</h1>
+      <button onClick={handleClick}></button>
       <div className="container">
         <div className="content">
           <section>{props.logo}</section>
