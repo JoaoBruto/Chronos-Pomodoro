@@ -11,7 +11,15 @@ export function Menu() {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) {
     event.preventDefault(); // não segue o link, apenas executa o código
-    console.log('tema trocado')
+
+    console.log('tema trocado', Date.now())
+  
+    setTheme(prevTheme => {
+      const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
+      return nextTheme
+    });
+
+    document.documentElement.setAttribute('data-theme', theme)
   }
 
   return(
