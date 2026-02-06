@@ -17,6 +17,7 @@ export function Menu() {
   return(
     <>
       <nav className={styles.menu}>
+        <h1>{theme}</h1>
         <a className={styles.menuLink} href='#' aria-label='Ir para a Home' title='Ir para a Home'>
           
           <HouseIcon />
