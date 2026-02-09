@@ -11,20 +11,31 @@ export function Menu() {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) {
     event.preventDefault(); // não segue o link, apenas executa o código
-
-    console.log('tema trocado', Date.now())
   
     setTheme(prevTheme => {
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
       return nextTheme
     });
 
-    // document.documentElement.setAttribute('data-theme', theme)
+    
   }
 
+  // useEffect(() => {
+  //  console.log('useEffect ', Date.now());
+  //}); Executa todas as vezes que o componente renderiza na tela
+
+  // useEffect(() => {
+  //  console.log('useEffect')
+  // }, []) // Executa apenas uma vez. Melhor para usar com API
+
   useEffect(() => {
-    console.log('', Date.now());
-  });
+    console.log('Theme mudou',theme, Date.now());
+    document.documentElement.setAttribute('data-theme', theme);
+
+    return() => {
+      console.log('Atualizando este componente'); // Assim evita de acumular aplicações na página e travar ela. (CleanUp)
+    }
+  }, [theme]) // Só executa quando o theme muda
 
   return(
     <>
