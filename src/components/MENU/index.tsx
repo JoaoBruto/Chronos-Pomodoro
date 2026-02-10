@@ -5,7 +5,11 @@ import { useState, useEffect } from 'react'
 type AvailableThemes = 'dark' | 'light'
 
 export function Menu() {
-  const [theme, setTheme] = useState<AvailableThemes>('dark');
+  const [theme, setTheme] = useState<AvailableThemes>(() => {
+    const storageTheme = 
+      (localStorage.getItem('theme') as AvailableThemes || 'dark')
+    return storageTheme
+  });
 
   function handleThemeChange(
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -20,17 +24,9 @@ export function Menu() {
     
   }
 
-  // useEffect(() => {
-  //  console.log('useEffect ', Date.now());
-  //}); Executa todas as vezes que o componente renderiza na tela
-
-  // useEffect(() => {
-  //  console.log('useEffect')
-  // }, []) // Executa apenas uma vez. Melhor para usar com API
-
   useEffect(() => {
-    console.log('Theme mudou',theme, Date.now());
     document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
 
     return() => {
       console.log('Atualizando este componente'); // Assim evita de acumular aplicações na página e travar ela. (CleanUp)
