@@ -11,11 +11,8 @@ import './Styles/global.css'
 import './Styles/theme.css'
 import { Menu } from './components/MENU/index.tsx'
 import { CountDown } from './components/Count Down/index.tsx'
-import { DefaultInput } from './components/Input/index.tsx'
-import { Cycles } from './components/Cycles/index.tsx'
-import { DefaultButton } from './components/DefaultButton/index.tsx'
-import { PlayCircleIcon } from 'lucide-react'
 import { Footer } from './components/Footer/index.tsx'
+import { MainForm } from './components/MainForm/index.tsx'
 
 
 
@@ -27,45 +24,23 @@ createRoot(document.getElementById('root')!).render(
     <>
 
       <Container>
-        <Logo></Logo>
+        <Logo />
       </Container>
 
       <Container>
-        <Menu></Menu>
+        <Menu />
       </Container>
 
       <Container>
-        <CountDown></CountDown>
-      </Container>
-
-      <Container>
-        <form className='form' action=''>
-          <div className='formRow'>
-            <DefaultInput
-             labelText='1'
-              id='meuInput'
-              type='text'
-              placeholder='Digite algo' />
-          </div>
-
-          <div className='formRow'>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-
-          <div className='formRow'>
-            <Cycles></Cycles>
-          </div>
-
-          <div className='formRow'>
-            <DefaultButton color='green'>
-              <PlayCircleIcon></PlayCircleIcon>
-            </DefaultButton>
-          </div>
-        </form>
+        <CountDown />
       </Container>
 
       <Container>
         <Footer></Footer>
+      </Container>
+
+      <Container>
+        <MainForm />
       </Container>
 
 
