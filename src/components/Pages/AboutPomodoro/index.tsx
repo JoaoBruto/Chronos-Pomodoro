@@ -116,7 +116,7 @@ export function AboutPomodoro () {
             </p>
 
             <p>
-              <em>"Foco total, sem pressa, sem pausa, só vai!"</em> 💪🧘‍♂️
+              <em>"Foco total, sem pressa, não pensa, só vai!"</em> 💪🧘‍♂️
             </p>
         </GenericHtml>
     </MainTemplate>
