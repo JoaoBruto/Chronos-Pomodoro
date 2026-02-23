@@ -112,7 +112,7 @@ export function AboutPomodoro () {
             <p>
               <strong>Pronto pra focar?</strong> Bora lá{' '}
               <a href='/'>voltar para a página inicial</a> e iniciar seus
-              Pomodoros! 🍅🚀
+              Pomodoros! 🚀
             </p>
 
             <p>
