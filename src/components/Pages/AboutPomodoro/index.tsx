@@ -50,7 +50,7 @@ export function AboutPomodoro () {
             <p>
               Você pode configurar o tempo de foco, descanso curto e descanso
               longo do jeito que quiser! Basta acessar a{' '}
-              <a href='/settings'>página de configurações</a> e ajustar os minutos
+              <a href='/settings'>Página de Configurações</a> e ajustar os minutos
               como preferir.
             </p>
 
