@@ -4,18 +4,18 @@ import type { TaskModel } from "./TaskModel"
 
 export type TaskStateModel = {
   // Histórico, MainForm
-  tasks: TaskModel[]; // Histórico,  MainFom
+  tasks: TaskModel[];
 
   // Configurações do Timer
-  secondsRemaining: number; // Home, CountDown, Histórico, Form (para saber se o botão é para iniciar ou parar), Button
-  formattedSecondsRemaining: string; // Titulo, CountDown
-  activeTask: TaskModel | null; // CountDown, Histórico, Form (para saber se o botão é para iniciar ou parar), Button
-  currentCycle: number; // Home
+  secondsRemaining: number;
+  formattedSecondsRemaining: string;
+  activeTask: TaskModel | null;
+  currentCycle: number;
 
   // Configurações dos ciclos
-  config: { // Conjunto para exportar os models
-    worktime: number; // MainForm
-    shortBreakTime: number; // MainForm
-    longBreakTime: number; // MainForm
+  config: {
+    worktime: number;
+    shortBreakTime: number;
+    longBreakTime: number;
   }
 }
