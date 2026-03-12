@@ -10,7 +10,7 @@ type HomeProps = {
 }
 
 export function Home (props: HomeProps) { // Repassa o estado por props
-  console.log(props)
+  const {state, setState} = props;
   
   return(
     <MainTemplate>
