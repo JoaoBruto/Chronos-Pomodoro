@@ -1,67 +1,49 @@
-⏳ Chronos Pomodoro
-O Chronos Pomodoro é uma aplicação de gerenciamento de tempo baseada na técnica Pomodoro. O objetivo é ajudar usuários a maximizarem sua produtividade, alternando períodos de foco total com pausas estratégicas, tudo com uma interface fluida e moderna.
+# ⏳ Chronos Pomodoro
 
-Este projeto foi desenvolvido como parte de um estudo aprofundado sobre o ecossistema React, focando especialmente em gerenciamento de estado global e tipagem estática.
+O **Chronos Pomodoro** é uma aplicação de gerenciamento de tempo desenvolvida para ajudar na organização de tarefas e aumento de produtividade através da técnica Pomodoro. O projeto foca em oferecer uma experiência de usuário fluida, com controle total sobre os ciclos de foco e descanso.
 
-🚀 Funcionalidades
-Timer Customizável: Defina o tempo ideal para seus ciclos de foco.
+Este projeto foi desenvolvido como parte de um estudo prático sobre o ecossistema moderno do React, focando em arquitetura de estados e tipagem robusta.
 
-Ciclos de Pausa: Alternância entre pausas curtas e pausas longas para recuperação mental.
+---
 
-Histórico Completo: Acompanhe o progresso das suas tarefas e veja quantos ciclos você completou.
+## ✨ Funcionalidades
 
-Controle Total: Inicie, pause ou interrompa um ciclo a qualquer momento.
+- **Timer Dinâmico:** Ciclos de foco customizáveis.
+- **Intervalos:** Opções de pausa curta e pausa longa.
+- **Histórico de Atividades:** Registro completo de todos os ciclos realizados para acompanhar sua evolução.
+- **Configurações:** Defina o tempo de foco e pausas de acordo com sua necessidade.
+- **Controle de Fluxo:** Permite pausar ou interromper um ciclo já iniciado com facilidade.
+- **Interface Moderna:** Design responsivo e otimizado com foco em UX.
 
-Persistência de Dados: Seus registros ficam salvos mesmo após atualizar a página.
+---
 
-🛠️ Tecnologias Utilizadas
-O projeto utiliza o que há de mais moderno no desenvolvimento Front-end:
+## 🛠️ Tecnologias e Ferramentas
 
-React.js: Biblioteca principal para construção da interface.
+O projeto foi construído utilizando as melhores práticas de desenvolvimento web:
 
-TypeScript: Adição de tipagem estática para maior segurança e produtividade.
+* **[React.js](https://reactjs.org/)** - Biblioteca para construção de interfaces.
+* **[TypeScript](https://www.typescriptlang.org/)** - Superset para adicionar tipagem estática e evitar erros em tempo de execução.
+* **[Vite](https://vitejs.dev/)** - Ferramenta de build extremamente rápida.
+* **[Tailwind CSS](https://tailwindcss.com/)** - Framework utilitário para estilização ágil e consistente.
+* **[React Context API](https://react.dev/learn/passing-data-deeply-with-context)** - Gerenciamento de estado global (Timer e Histórico).
+---
 
-Vite: Build tool ultra-rápida para o desenvolvimento.
+## 🧠 Aprendizados e Conceitos Aplicados
 
-Tailwind CSS: Framework utilitário para estilização rápida e responsiva.
+Durante o desenvolvimento deste projeto, foram explorados conceitos fundamentais do React:
 
-React Context API: Utilizada para gerenciar o estado global da aplicação (Timer e Histórico) sem "prop drilling".
+- **Context API:** Para evitar o *Prop Drilling* e gerenciar o estado do timer em toda a aplicação.
+- **useReducer:** Para lidar com lógicas de estado mais complexas, como o histórico de ciclos.
+- **useEffect:** Gerenciamento de efeitos colaterais e persistência (LocalStorage).
+- **Hooks Customizados:** Modularização da lógica de negócio.
 
-📖 Aprendizados
-Este projeto foi fundamental para consolidar conceitos como:
+---
 
-Uso de Hooks (useState, useEffect, useReducer).
+## 🔑 Legenda do Projeto
 
-Implementação de Context API para compartilhamento de estados entre componentes.
+Para facilitar a leitura do código e das funcionalidades, utilizo os seguintes identificadores:
 
-Manipulação de datas e intervalos de tempo com JavaScript/TypeScript.
+* 📚 **Estudo/Aprendizado:** Funcionalidades ou trechos de código implementados para praticar conceitos de React, Hooks e Context API.
+* ✨ **Funcionalidade do Site:** Recursos ativos que compõem o produto final e a experiência de uso do Chronos.
 
-Criação de interfaces responsivas e acessíveis.
 
-🔧 Como rodar o projeto
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/Chronos-Pomodoro.git
-Entre na pasta do projeto:
-
-Bash
-cd Chronos-Pomodoro
-Instale as dependências:
-
-Bash
-npm install
-# ou
-yarn
-Inicie o servidor de desenvolvimento:
-
-Bash
-npm run dev
-# ou
-yarn dev
-Acesse http://localhost:5173 no seu navegador.
-
-📝 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-Desenvolvido com ☕ e foco por João Rodrigo.
