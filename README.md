@@ -1,75 +1,67 @@
-# React + TypeScript + Vite
+⏳ Chronos Pomodoro
+O Chronos Pomodoro é uma aplicação de gerenciamento de tempo baseada na técnica Pomodoro. O objetivo é ajudar usuários a maximizarem sua produtividade, alternando períodos de foco total com pausas estratégicas, tudo com uma interface fluida e moderna.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de um estudo aprofundado sobre o ecossistema React, focando especialmente em gerenciamento de estado global e tipagem estática.
 
-Currently, two official plugins are available:
+🚀 Funcionalidades
+Timer Customizável: Defina o tempo ideal para seus ciclos de foco.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ciclos de Pausa: Alternância entre pausas curtas e pausas longas para recuperação mental.
 
-## React Compiler
+Histórico Completo: Acompanhe o progresso das suas tarefas e veja quantos ciclos você completou.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Controle Total: Inicie, pause ou interrompa um ciclo a qualquer momento.
 
-## Expanding the ESLint configuration
+Persistência de Dados: Seus registros ficam salvos mesmo após atualizar a página.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🛠️ Tecnologias Utilizadas
+O projeto utiliza o que há de mais moderno no desenvolvimento Front-end:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+React.js: Biblioteca principal para construção da interface.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+TypeScript: Adição de tipagem estática para maior segurança e produtividade.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Vite: Build tool ultra-rápida para o desenvolvimento.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tailwind CSS: Framework utilitário para estilização rápida e responsiva.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+React Context API: Utilizada para gerenciar o estado global da aplicação (Timer e Histórico) sem "prop drilling".
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# Chronos-Pomodoro" 
-"# Chronos-Pomodoro" 
+📖 Aprendizados
+Este projeto foi fundamental para consolidar conceitos como:
+
+Uso de Hooks (useState, useEffect, useReducer).
+
+Implementação de Context API para compartilhamento de estados entre componentes.
+
+Manipulação de datas e intervalos de tempo com JavaScript/TypeScript.
+
+Criação de interfaces responsivas e acessíveis.
+
+🔧 Como rodar o projeto
+Clone o repositório:
+
+Bash
+git clone https://github.com/seu-usuario/Chronos-Pomodoro.git
+Entre na pasta do projeto:
+
+Bash
+cd Chronos-Pomodoro
+Instale as dependências:
+
+Bash
+npm install
+# ou
+yarn
+Inicie o servidor de desenvolvimento:
+
+Bash
+npm run dev
+# ou
+yarn dev
+Acesse http://localhost:5173 no seu navegador.
+
+📝 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+Desenvolvido com ☕ e foco por João Rodrigo.
