@@ -7,17 +7,17 @@ const initialState: TaskStateModel = {
   tasks: [],
   secondsRemaining: 0,
   formattedSecondsRemaining: '00:00',
-  activeTask: null,
-  currentCycle: 0,
+  activeTask: null, // Inicialmente é nulo
+  currentCycle: 0, 
   config: {
-    worktime: 25,
-    shortBreakTime: 5,
-    longBreakTime: 15,
+    worktime: 25, // Pomodoro normal
+    shortBreakTime: 5, // Pequena pausa
+    longBreakTime: 15, // Pausa longa
   },
 }
 
 
 export function App () {
   const [state, setState] = useState(initialState);
-  return <Home state={state} setState={setState} />
+  return <Home state={state} setState={setState} /> // Mesmo nome das chaves na função e estado
 }

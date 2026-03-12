@@ -30,13 +30,13 @@ createRoot(document.getElementById('root')!).render(
     <Home state={{
         tasks: [],
         secondsRemaining: 0,
-        formattedSecondsRemaining: '',
-        activeTask: null,
+        formattedSecondsRemaining: '00:00',
+        activeTask: null, // Inicialmente começa como nulo
         currentCycle: 0,
         config: {
-          worktime: 0,
-          shortBreakTime: 0,
-          longBreakTime: 0
+          worktime: 0, // Pomodoro normal
+          shortBreakTime: 0, // Pequena pausa
+          longBreakTime: 0 // Pausa longa
         }
       }} setState={function (): void {
         throw new Error('Function not implemented.')
