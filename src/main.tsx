@@ -34,7 +34,7 @@ createRoot(document.getElementById('root')!).render(
         activeTask: null, // Inicialmente começa como nulo
         currentCycle: 0,
         config: {
-          worktime: 0, // Pomodoro normal
+          worktime: 25, // Pomodoro normal
           shortBreakTime: 0, // Pequena pausa
           longBreakTime: 0 // Pausa longa
         }

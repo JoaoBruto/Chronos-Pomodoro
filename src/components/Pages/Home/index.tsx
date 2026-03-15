@@ -4,23 +4,24 @@ import { Container } from "../../Container";
 import { CountDown } from "../../Count Down";
 import { MainForm } from "../../MainForm";
 
-type HomeProps = {
+
+export type HomeProps = {
   state: TaskStateModel;
   setState: React.Dispatch<React.SetStateAction<TaskStateModel>>;
+
 }
 
 export function Home (props: HomeProps) { // Repassa o estado por props
-  const {state, setState} = props;
   
   return(
     <MainTemplate>
           
           <Container>
-            <CountDown />
+            <CountDown {...props}/>
           </Container>
 
           <Container>
-            <MainForm />
+            <MainForm {...props}/>
           </Container>
     </MainTemplate>
     )
