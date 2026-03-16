@@ -19,5 +19,5 @@ const initialState: TaskStateModel = {
 
 export function App () {
   const [state, setState] = useState(initialState);
-  return <Home state={state} setState={setState} /> // Mesmo nome das chaves na função e estado
+  return <Home/> // Mesmo nome das chaves na função e estado
 }

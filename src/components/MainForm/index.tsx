@@ -17,7 +17,7 @@ export function MainForm({state} : HomeProps) {
           </div>
 
           <div className='formRow'>
-            <p>Próximo intervalo é de {state.config.worktime}min</p>
+            <p>Próximo intervalo é de 25min</p>
           </div>
 
           <div className='formRow'>
