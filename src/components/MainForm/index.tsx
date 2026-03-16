@@ -5,6 +5,7 @@ import { DefaultInput } from "../Input";
 import type { HomeProps } from "../Pages/Home";
 
 export function MainForm({state} : HomeProps) {
+
   return (
         <form className='form' action=''>
           <div className='formRow'>
