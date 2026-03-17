@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './Styles/global.css'
 import './Styles/theme.css'
 import { Home } from './components/Pages/Home/index.tsx'
+import { TaskContext } from './contexts/TaskContext/index.tsx'
+
 
 
 
@@ -14,7 +16,10 @@ createRoot(document.getElementById('root')!).render(
 
   <StrictMode>  
     <>
-    <Home /> 
+    <TaskContext.Provider value={{outraCoisa: 321}}>
+      <Home /> 
+    </TaskContext.Provider> 
+    
      
     </>
   </StrictMode>,
