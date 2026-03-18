@@ -13,13 +13,13 @@ createRoot(document.getElementById('root')!).render(
  // Sempre que eu usar useState, não vou usar atribuição direta
  // Sempre que uma variável depender da variável anterior, deve-se colocar uma arrow function 'setFunção((prevState) => "o que ocorre")'
  
+// TaskContext.Provider value:{} será o novo valor de TaskContext.
 
   <StrictMode>  
     <>
-    <TaskContext.Provider value={{novo_valor: '1512'}}>
+    <TaskContext.Provider value={{novo_valor: '1512'}}> 
       <Home /> 
     </TaskContext.Provider> 
-    
      
     </>
   </StrictMode>,
