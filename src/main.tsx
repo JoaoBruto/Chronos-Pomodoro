@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
 
   <StrictMode>  
     <>
-    <TaskContext.Provider value={{outraCoisa: 321}}>
+    <TaskContext.Provider value={{novo_valor: '1512'}}>
       <Home /> 
     </TaskContext.Provider> 
     
