@@ -1,5 +1,26 @@
 import { createContext } from "react";
+import type { TaskStateModel } from "../../models/TaskStateModel";
 
-export const TaskContext = createContext({
-  chave: 'valor', // Valor inicial do contexto. Só será usado se eu não tiver um provider
+const initialState: TaskStateModel = {
+  tasks: [],
+  secondsRemaining: 0,
+  formattedSecondsRemaining: '00:00',
+  activeTask: null, // Inicialmente é nulo
+  currentCycle: 0, 
+  config: {
+    worktime: 25, // Pomodoro normal
+    shortBreakTime: 5, // Pequena pausa
+    longBreakTime: 15, // Pausa longa
+  },
+}
+
+type TaskContextPros = {
+  state: TaskStateModel,
+  setState: React.Dispatch<React.SetStateAction<TaskStateModel>> // Função do setState, mas do useState
+}
+
+export const TaskContext = createContext({ // Valor inicial do contexto. Só será usado se eu não tiver um provider
+  state: initialState,
+  setState: () => {}, 
 })
+
