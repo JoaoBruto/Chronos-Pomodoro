@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { Children, createContext } from "react";
 import type { TaskStateModel } from "../../models/TaskStateModel";
 
 const initialState: TaskStateModel = {
@@ -17,6 +17,18 @@ const initialState: TaskStateModel = {
 type TaskContextPros = {
   state: TaskStateModel,
   setState: React.Dispatch<React.SetStateAction<TaskStateModel>> // Função do setState, mas do useState
+}
+
+type TaskContextProviderProps = {
+  children: React.ReactNode
+}
+
+export function TaskContextProvider({children}: TaskContextProviderProps) {
+  return (
+  <TaskContext.Provider value={{outraCoisa: 321}}>
+    {children}
+  </TaskContext.Provider>
+  )
 }
 
 export const TaskContext = createContext({ // Valor inicial do contexto. Só será usado se eu não tiver um provider
