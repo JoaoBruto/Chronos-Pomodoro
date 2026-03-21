@@ -20,7 +20,7 @@ type TaskContextPros = {
 }
 
 type TaskContextProviderProps = {
-  children: React.ReactNode
+  children: React.ReactNode // Definir type para children, para não dar erro
 }
 
 export function TaskContextProvider({children}: TaskContextProviderProps) {
