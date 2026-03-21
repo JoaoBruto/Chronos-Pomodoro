@@ -24,8 +24,9 @@ type TaskContextProviderProps = {
 }
 
 export function TaskContextProvider({children}: TaskContextProviderProps) {
+  // O provider define o novo valor para TaskContext
   return (
-  <TaskContext.Provider value={{outraCoisa: 321}}>
+  <TaskContext.Provider value={{outraCoisa: 321}}> 
     {children}
   </TaskContext.Provider>
   )
